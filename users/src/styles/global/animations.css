@@ -1,0 +1,100 @@
+@keyframes shimmer {
+  0% {
+    background-position: -260px 0;
+  }
+
+  100% {
+    background-position: 260px 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes glowPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 22px rgba(140, 205, 248, 0.1);
+  }
+
+  50% {
+    box-shadow: 0 0 42px rgba(255, 255, 255, 0.1);
+  }
+}
+
+@keyframes floatSoft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes spotlightDrift {
+  0% {
+    filter: saturate(1);
+    transform: scale(1);
+  }
+
+  100% {
+    filter: saturate(1.08);
+    transform: scale(1.035);
+  }
+}
+
+@keyframes particleFloat {
+  to {
+    background-position: 120px 220px, -180px 160px;
+  }
+}
+
+@keyframes borderSweep {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loaderReveal {
+  0% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes loaderCore {
+  0% {
+    transform: rotate(0deg) scale(0.92);
+  }
+
+  50% {
+    transform: rotate(180deg) scale(1.06);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(0.92);
+  }
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}

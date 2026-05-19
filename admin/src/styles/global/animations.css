@@ -1,0 +1,27 @@
+@keyframes adminGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 22px rgba(140, 205, 248, 0.1);
+  }
+
+  50% {
+    box-shadow: 0 0 42px rgba(255, 255, 255, 0.1);
+  }
+}
+
+@keyframes loaderPulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes loaderSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,57 @@
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+}
+
+.metric-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  background:
+    radial-gradient(circle at 18% 0%, rgba(76, 201, 255, 0.16), transparent 36%),
+    linear-gradient(150deg, rgba(92, 179, 255, 0.13), rgba(255, 255, 255, 0.03)),
+    var(--color-panel);
+  box-shadow: var(--shadow-panel);
+  backdrop-filter: blur(24px) saturate(1.16);
+  transition:
+    transform var(--transition-base),
+    border-color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.metric-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(76, 201, 255, 0.16), transparent 45%, rgba(139, 124, 246, 0.1));
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.metric-card:hover {
+  transform: perspective(900px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg)) translateY(-7px);
+  border-color: var(--border-cyan);
+  box-shadow: var(--shadow-glow);
+}
+
+.metric-card:hover::before {
+  opacity: 1;
+}
+
+.metric-card svg {
+  color: var(--color-cyan);
+}
+
+.metric-card strong {
+  display: block;
+  margin-top: 18px;
+  font-size: 2.3rem;
+  font-weight: 850;
+}
+
+.metric-card span {
+  color: var(--color-muted);
+}

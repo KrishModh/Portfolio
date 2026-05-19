@@ -1,0 +1,23 @@
+.not-found-page {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: var(--space-5);
+  background: var(--color-void);
+}
+
+.not-found-card {
+  width: min(100%, 448px);
+  padding: 32px;
+  text-align: center;
+}
+
+.not-found-card h1 {
+  margin: 12px 0 0;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.not-found-link {
+  margin-top: 24px;
+}

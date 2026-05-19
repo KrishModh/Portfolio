@@ -1,0 +1,37 @@
+@media (max-width: 1024px) {
+  .section-shell {
+    padding: 96px 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-shell {
+    padding: 82px 16px;
+  }
+
+  .section-header {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-shell {
+    padding: 72px 12px;
+  }
+
+  .section-title {
+    font-size: 2.15rem;
+  }
+
+  .not-found-card {
+    padding: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section-shell,
+  .hero-section,
+  .footer-shell {
+    max-width: 1320px;
+  }
+}

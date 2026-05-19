@@ -1,0 +1,73 @@
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: 18px;
+}
+
+.certificate-card {
+  position: relative;
+  overflow: hidden;
+  min-width: 0;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+  padding: 14px;
+  background:
+    radial-gradient(circle at 18% 0%, rgba(76, 201, 255, 0.13), transparent 36%),
+    linear-gradient(155deg, rgba(92, 179, 255, 0.12), rgba(255, 255, 255, 0.03)),
+    var(--color-panel);
+  box-shadow: var(--shadow-panel);
+  backdrop-filter: blur(24px) saturate(1.16);
+  transition:
+    transform var(--transition-base),
+    border-color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.certificate-card:hover {
+  transform: translateY(-7px);
+  border-color: var(--border-bright);
+  box-shadow: var(--shadow-cyan);
+}
+
+@media (max-width: 480px) {
+  .certificate-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+}
+
+.certificate-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #0b1220;
+}
+
+.certificate-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.certificate-card h3 {
+  margin-top: 14px;
+  font-size: 1.1rem;
+  font-weight: 850;
+}
+
+.certificate-card p,
+.certificate-card time {
+  display: block;
+  margin-top: 8px;
+  color: var(--color-muted);
+}
+
+.certificate-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 12px;
+  color: var(--color-solar);
+  font-weight: 800;
+}

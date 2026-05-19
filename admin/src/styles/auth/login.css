@@ -1,0 +1,32 @@
+.login-screen {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 20px;
+}
+
+.login-card {
+  display: grid;
+  gap: 14px;
+  width: min(100%, 430px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  background:
+    radial-gradient(circle at 18% 0%, rgba(76, 201, 255, 0.16), transparent 36%),
+    var(--color-panel-strong);
+  backdrop-filter: blur(26px) saturate(1.16);
+  box-shadow: var(--shadow-panel), 0 0 44px rgba(76, 201, 255, 0.12);
+}
+
+.login-card svg { color: var(--color-cyan); }
+.login-card h1 { font-size: 2.1rem; font-weight: 850; line-height: 1; }
+
+.login-card input {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  outline: none;
+  background: rgba(7, 17, 31, 0.54);
+  color: var(--color-text);
+}

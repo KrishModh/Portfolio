@@ -1,0 +1,17 @@
+.footer-shell {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 30px 20px 48px;
+  color: var(--color-muted-strong);
+}
+
+@media (max-width: 768px) {
+  .footer-shell {
+    flex-direction: column;
+  }
+}
