@@ -7,7 +7,7 @@ import { useAuth } from "../../context/AuthContext";
 export default function Login() {
   const { login } = useAuth();
   const navigate = useNavigate();
-  const [form, setForm] = useState({ email: "", password: "" });
+  const [form, setForm] = useState({ username: "", password: "" });
   const [loading, setLoading] = useState(false);
 
   const submit = async (event) => {
@@ -31,10 +31,11 @@ export default function Login() {
         <p className="eyebrow">Admin access</p>
         <h1>Portfolio Command Center</h1>
         <input
-          type="email"
-          placeholder="Admin email"
-          value={form.email}
-          onChange={(event) => setForm({ ...form, email: event.target.value })}
+          type="text"
+          placeholder="Enter username"
+          value={form.username}
+          onChange={(event) => setForm({ ...form, username: event.target.value })}
+          autoComplete="username"
           required
         />
         <input
@@ -42,6 +43,7 @@ export default function Login() {
           placeholder="Password"
           value={form.password}
           onChange={(event) => setForm({ ...form, password: event.target.value })}
+          autoComplete="current-password"
           minLength="8"
           required
         />

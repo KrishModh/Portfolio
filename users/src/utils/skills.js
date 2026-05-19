@@ -1,9 +1,37 @@
 export const skillGroups = [
-  { title: "Frontend", skills: ["React", "Vite", "Tailwind CSS", "Framer Motion", "Responsive UI"] },
-  { title: "Backend", skills: ["Node.js", "Express.js", "REST APIs", "MVC", "JWT Auth"] },
-  { title: "Databases", skills: ["MongoDB", "Mongoose", "Schema Design", "Indexes"] },
-  { title: "Security", skills: ["Web Security", "API Security", "Secure Coding", "Input Validation", "Threat Mindset"] },
-  { title: "Dev Tools", skills: ["Git", "Postman", "VS Code", "npm", "Debugging"] },
-  { title: "Languages", skills: ["JavaScript", "HTML", "CSS", "C/C++", "Python"] },
-  { title: "Cloud & Deployment", skills: ["Vercel", "Render", "Cloudinary", "MongoDB Atlas"] }
+  {
+    title: "Frontend",
+    skills: ["Next.js", "React.js", "Vue.js", "Tailwind CSS", "Framer Motion", "Client-Side Auth"]
+  },
+  {
+    title: "Backend",
+    skills: ["Node.js", "Express.js", "Django", "FastAPI / Flask", "RESTful APIs", "Secure Coding"]
+  },
+  {
+    title: "Databases",
+    skills: ["PostgreSQL", "MySQL", "MongoDB", "SQLite", "Schema Design"]
+  },
+  {
+    title: "Security",
+    skills: [
+      "OWASP Top 10 Auditing",
+      "Penetration Testing (PT)",
+      "Burp Suite & Nmap",
+      "Vulnerability Assessment",
+      "Source Code Review",
+      "JWT & Cryptographic Hashing"
+    ]
+  },
+  {
+    title: "Dev Tools",
+    skills: ["Kali Linux", "Ubuntu CLI", "Git & GitHub", "Postman", "Docker", "Debugging"]
+  },
+  {
+    title: "Languages",
+    skills: ["JavaScript", "Python", "Java", "C/C++", "HTML / CSS"]
+  },
+  {
+    title: "Cloud & Deployment",
+    skills: ["AWS", "Vercel", "Render", "Cloudinary", "MongoDB Atlas", "Cloudflare", "Supabase"]
+  }
 ];

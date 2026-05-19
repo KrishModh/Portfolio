@@ -3,6 +3,8 @@ require("dotenv").config();
 const required = [
   "MONGODB_URI",
   "JWT_SECRET",
+  "ADMIN_USERNAME",
+  "ADMIN_PASSWORD",
   "FRONTEND_URL",
   "ADMIN_URL",
   "CLOUDINARY_CLOUD_NAME",
@@ -22,6 +24,8 @@ const env = {
   JWT_SECRET: process.env.JWT_SECRET,
   JWT_EXPIRES_IN: process.env.JWT_EXPIRES_IN || "7d",
   ADMIN_COOKIE_NAME: process.env.ADMIN_COOKIE_NAME || "portfolio_admin_token",
+  ADMIN_USERNAME: process.env.ADMIN_USERNAME,
+  ADMIN_PASSWORD: process.env.ADMIN_PASSWORD,
   FRONTEND_URL: process.env.FRONTEND_URL,
   ADMIN_URL: process.env.ADMIN_URL,
   CLOUDINARY_CLOUD_NAME: process.env.CLOUDINARY_CLOUD_NAME,
@@ -30,10 +34,7 @@ const env = {
   UPLOAD_FOLDER: process.env.UPLOAD_FOLDER || "portfolio-platform",
   RATE_LIMIT_WINDOW_MS: Number(process.env.RATE_LIMIT_WINDOW_MS || 900000),
   RATE_LIMIT_MAX: Number(process.env.RATE_LIMIT_MAX || 120),
-  CONTACT_RATE_LIMIT_MAX: Number(process.env.CONTACT_RATE_LIMIT_MAX || 5),
-  ADMIN_SEED_NAME: process.env.ADMIN_SEED_NAME,
-  ADMIN_SEED_EMAIL: process.env.ADMIN_SEED_EMAIL,
-  ADMIN_SEED_PASSWORD: process.env.ADMIN_SEED_PASSWORD
+  CONTACT_RATE_LIMIT_MAX: Number(process.env.CONTACT_RATE_LIMIT_MAX || 5)
 };
 
 module.exports = { env };

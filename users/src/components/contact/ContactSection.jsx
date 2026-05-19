@@ -20,7 +20,7 @@ export default function ContactSection() {
     setSubmitting(true);
     try {
       await portfolioApi.sendMessage(form);
-      toast.success("Message sent securely.");
+      toast.success("Message sent.");
       setForm({ name: "", email: "", message: "", company: "" });
     } catch (error) {
       toast.error(error.response?.data?.message || "Message could not be sent.");
@@ -35,7 +35,7 @@ export default function ContactSection() {
       <motion.div className="contact-grid" variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
         <aside className="glass-panel contact-aside">
           <Mail className="contact-icon" size={30} />
-          <h3>Freelance, internships, AppSec collaboration</h3>
+          <h3>Freelance, AppSec Roles & Collaboration</h3>
           <p>Open to product builds, secure code reviews, web/API security work, and ambitious engineering teams.</p>
           {settings.email && <a href={`mailto:${settings.email}`}>{settings.email}</a>}
         </aside>

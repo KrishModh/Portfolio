@@ -26,8 +26,7 @@ export default function HomeSection() {
           <span>Application Security Engineer</span>
         </motion.div>
         <motion.p className="hero-copy" variants={fadeUp}>
-          I design and ship polished web products with a security-first mindset, refined interfaces, and systems that feel effortless to use.
-        </motion.p>
+          I build scalable, high-performance web applications engineered with a security-first mindset. From pixel-perfect interfaces to bulletproof backend architecture, I deliver code that breaks-by-design but stands-by-delivery.        </motion.p>
         <motion.div className="hero-actions" variants={fadeUp}>
           <a className="neon-button" href="#projects">
             View work <ArrowDown size={18} />

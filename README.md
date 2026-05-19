@@ -19,12 +19,18 @@ cp admin/.env.example admin/.env
 
 No API URLs, MongoDB URI, JWT secret, Cloudinary credentials, social links, or resume URLs are hardcoded.
 
+Admin dashboard login uses these backend `.env` credentials:
+
+```env
+ADMIN_USERNAME=your_username
+ADMIN_PASSWORD=your_password
+```
+
 ## Backend
 
 ```bash
 cd backend
 npm install
-npm run seed:admin
 npm run dev
 ```
 

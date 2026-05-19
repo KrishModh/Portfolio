@@ -1,11 +1,25 @@
+const crypto = require("crypto");
 const jwt = require("jsonwebtoken");
-const Admin = require("../models/Admin");
 const { env } = require("../config/env");
 const { ApiError } = require("../utils/apiError");
 const { asyncHandler } = require("../utils/asyncHandler");
 
-function signToken(adminId) {
-  return jwt.sign({ id: adminId }, env.JWT_SECRET, { expiresIn: env.JWT_EXPIRES_IN });
+function signToken(username) {
+  return jwt.sign({ sub: "admin", username }, env.JWT_SECRET, { expiresIn: env.JWT_EXPIRES_IN });
+}
+
+function safeCompare(value, expected) {
+  const valueHash = crypto.createHash("sha256").update(String(value || "")).digest();
+  const expectedHash = crypto.createHash("sha256").update(String(expected || "")).digest();
+  return crypto.timingSafeEqual(valueHash, expectedHash);
+}
+
+function adminPayload() {
+  return {
+    id: "env-admin",
+    name: env.ADMIN_USERNAME,
+    username: env.ADMIN_USERNAME
+  };
 }
 
 function cookieOptions() {
@@ -18,18 +32,17 @@ function cookieOptions() {
 }
 
 const login = asyncHandler(async (req, res) => {
-  const { email, password } = req.body;
-  const admin = await Admin.findOne({ email }).select("+password");
+  const { username, password } = req.body;
 
-  if (!admin || !(await admin.comparePassword(password))) {
+  if (!safeCompare(username, env.ADMIN_USERNAME) || !safeCompare(password, env.ADMIN_PASSWORD)) {
     throw new ApiError(401, "Invalid credentials");
   }
 
-  const token = signToken(admin._id);
+  const token = signToken(env.ADMIN_USERNAME);
   res.cookie(env.ADMIN_COOKIE_NAME, token, cookieOptions());
   res.json({
     token,
-    admin: { id: admin._id, name: admin.name, email: admin.email }
+    admin: adminPayload()
   });
 });
 

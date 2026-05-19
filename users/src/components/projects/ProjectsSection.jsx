@@ -16,7 +16,7 @@ export default function ProjectsSection() {
   return (
     <section id="projects" className="section-shell">
       <SectionHeader eyebrow="Projects" title="Dynamic workbench of shipped ideas">
-        Projects are managed from the admin dashboard and rendered from the backend.
+        {/* Projects are managed from the admin dashboard and rendered from the backend. */}
       </SectionHeader>
       {loading && <div className="skeleton-grid"><span /><span /><span /></div>}
       {!loading && visibleProjects.length === 0 && <p className="empty-state">No projects published yet.</p>}
