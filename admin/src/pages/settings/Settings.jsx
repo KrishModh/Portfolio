@@ -42,7 +42,11 @@ export default function Settings() {
         <input name="location" value={form.location || ""} onChange={update} placeholder="Location" />
         <input name="githubUrl" value={form.githubUrl || ""} onChange={update} placeholder="GitHub URL" />
         <input name="linkedinUrl" value={form.linkedinUrl || ""} onChange={update} placeholder="LinkedIn URL" />
-        <input name="resumeUrl" value={form.resumeUrl || ""} onChange={update} placeholder="Resume URL" />
+        <section className="settings-resume-card">
+          <span className="eyebrow">Resume Settings</span>
+          <input name="resumeUrl" value={form.resumeUrl || ""} onChange={update} placeholder="Resume URL" />
+          <p>Paste a Google Drive link, hosted PDF URL, or any public resume link.</p>
+        </section>
         <textarea name="about" value={form.about || ""} onChange={update} placeholder="About content" />
         <button className="neon-button">Save settings</button>
       </form>

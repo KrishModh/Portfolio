@@ -71,3 +71,26 @@
   color: var(--color-solar);
   font-weight: 800;
 }
+
+:root[data-theme="light"] .certificate-card {
+  border-color: rgba(15, 23, 42, 0.12);
+  background:
+    radial-gradient(circle at 18% 0%, rgba(59, 130, 246, 0.12), transparent 36%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(239, 246, 255, 0.94)),
+    #ffffff;
+  box-shadow: var(--shadow-panel);
+  backdrop-filter: blur(14px) saturate(1.06);
+}
+
+:root[data-theme="light"] .certificate-image {
+  background: #e2e8f0;
+}
+
+:root[data-theme="light"] .certificate-card p,
+:root[data-theme="light"] .certificate-card time {
+  color: #475569;
+}
+
+:root[data-theme="light"] .certificate-card a {
+  color: #0f73d9;
+}

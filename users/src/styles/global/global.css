@@ -101,6 +101,23 @@ img {
   animation: particleFloat 32s linear infinite;
 }
 
+:root[data-theme="light"] body,
+:root[data-theme="light"] .public-app {
+  background: #f8fafc;
+}
+
+:root[data-theme="light"] .spotlight-bg {
+  opacity: 1;
+}
+
+:root[data-theme="light"] .ambient-particles {
+  opacity: 0.18;
+  background-image:
+    radial-gradient(circle, rgba(37, 99, 235, 0.18) 1px, transparent 1.6px),
+    radial-gradient(circle, rgba(14, 165, 233, 0.13) 1px, transparent 1.6px);
+  mask-image: radial-gradient(circle at center, black, transparent 76%);
+}
+
 .scroll-progress {
   position: fixed;
   top: 0;
@@ -148,4 +165,13 @@ img {
   max-width: 680px;
   color: var(--color-muted);
   line-height: 1.8;
+}
+
+:root[data-theme="light"] .section-title {
+  color: #0f172a;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+:root[data-theme="light"] .section-copy {
+  color: #334155;
 }

@@ -1,3 +1,21 @@
 .settings-form {
   width: min(100%, 820px);
 }
+
+.settings-resume-card {
+  display: grid;
+  gap: 10px;
+  border: 1px solid rgba(76, 201, 255, 0.24);
+  border-radius: 8px;
+  padding: 16px;
+  background:
+    radial-gradient(circle at 16% 0%, rgba(76, 201, 255, 0.16), transparent 36%),
+    rgba(7, 17, 31, 0.34);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 0 26px rgba(76, 201, 255, 0.08);
+}
+
+.settings-resume-card p {
+  margin: 0;
+  color: var(--color-muted);
+  line-height: 1.55;
+}

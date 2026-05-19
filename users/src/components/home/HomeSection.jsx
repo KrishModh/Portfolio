@@ -33,8 +33,8 @@ export default function HomeSection() {
             View work <ArrowDown size={18} />
           </a>
           {settings.resumeUrl && (
-            <a className="ghost-button" href={settings.resumeUrl} target="_blank" rel="noreferrer">
-              <Download size={18} /> Resume
+            <a className="ghost-button resume-download-button" href={settings.resumeUrl} target="_blank" rel="noreferrer">
+              <Download size={18} /> Download Resume
             </a>
           )}
           {settings.githubUrl && (
