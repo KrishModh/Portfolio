@@ -3,12 +3,12 @@
 <br/>
 
 ```
-██╗  ██╗██████╗ ██╗███████╗██╗  ██╗    ██████╗  ██████╗ ██████╗ ████████╗███████╗ ██████╗ ██╗     ██╗ ██████╗      ██████╗ ███████╗
-██║ ██╔╝██╔══██╗██║██╔════╝██║  ██║    ██╔══██╗██╔═══██╗██╔══██╗╚══██╔══╝██╔════╝██╔═══██╗██║     ██║██╔═══██╗    ██╔═══██╗██╔════╝
-█████╔╝ ██████╔╝██║███████╗███████║    ██████╔╝██║   ██║██████╔╝   ██║   █████╗  ██║   ██║██║     ██║██║   ██║    ██║   ██║███████╗
-██╔═██╗ ██╔══██╗██║╚════██║██╔══██║    ██╔═══╝ ██║   ██║██╔══██╗   ██║   ██╔══╝  ██║   ██║██║     ██║██║   ██║    ██║   ██║╚════██║
-██║  ██╗██║  ██║██║███████║██║  ██║    ██║     ╚██████╔╝██║  ██║   ██║   ██║     ╚██████╔╝███████╗██║╚██████╔╝    ╚██████╔╝███████║
-╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝      ╚═════╝ ╚══════╝╚═╝ ╚═════╝      ╚═════╝ ╚══════╝
+██╗  ██╗██████╗ ██╗███████╗██╗  ██╗    ██████╗  ██████╗ ██████╗ ████████╗███████╗ ██████╗ ██╗     ██╗ ██████╗     
+██║ ██╔╝██╔══██╗██║██╔════╝██║  ██║    ██╔══██╗██╔═══██╗██╔══██╗╚══██╔══╝██╔════╝██╔═══██╗██║     ██║██╔═══██╗
+█████╔╝ ██████╔╝██║███████╗███████║    ██████╔╝██║   ██║██████╔╝   ██║   █████╗  ██║   ██║██║     ██║██║   ██║
+██╔═██╗ ██╔══██╗██║╚════██║██╔══██║    ██╔═══╝ ██║   ██║██╔══██╗   ██║   ██╔══╝  ██║   ██║██║     ██║██║   ██║
+██║  ██╗██║  ██║██║███████║██║  ██║    ██║     ╚██████╔╝██║  ██║   ██║   ██║     ╚██████╔╝███████╗██║╚██████╔╝ 
+╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝      ╚═════╝ ╚══════╝╚═╝ ╚═════╝     
 ```
 
 <br/>
@@ -34,7 +34,6 @@
 <br/>
 
 [🌐 Live Portfolio](https://your-portfolio-domain.com) &nbsp;·&nbsp;
-[🔐 Admin Panel](https://your-admin-dashboard.vercel.app) &nbsp;·&nbsp;
 [📖 API Docs](#-api-reference) &nbsp;·&nbsp;
 [🚀 Deploy Now](#-deployment)
 
@@ -194,11 +193,11 @@ Krish Portfolio OS/
 
 | Public Portfolio | Admin Dashboard |
 |---|---|
-| ![Homepage](./docs/screenshots/homepage.png) | ![Admin](./docs/screenshots/admin-dashboard.png) |
+| <img width="2559" height="1439" alt="Screenshot 2026-05-20 110108" src="https://github.com/user-attachments/assets/e753c586-abb0-4e1c-8b93-2aaf9c530c1a" /> | <img width="2559" height="1439" alt="Screenshot 2026-05-20 110124" src="https://github.com/user-attachments/assets/65f6a8e3-8ad4-4f3c-8e72-beca60d61830" /> |
 
 | Projects Section | Mobile View |
 |---|---|
-| ![Projects](./docs/screenshots/projects.png) | ![Mobile](./docs/screenshots/mobile-responsive.png) |
+| <img width="2560" height="1440" alt="Screenshot (1422)" src="https://github.com/user-attachments/assets/e88b4181-0856-4790-adfb-ab8aaaa30ad6" /> | <img width="2560" height="1440" alt="Screenshot (1423)" src="https://github.com/user-attachments/assets/5c34fc04-fc0b-4e96-bed1-b65529ef58b4" /> |
 
 ---
 
@@ -218,8 +217,8 @@ Before you begin, make sure you have:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/krish-portfolio-os.git
-cd krish-portfolio-os
+git clone https://github.com/KrishModh/Portfolio
+cd Portfolio
 ```
 
 ### 2. Install Dependencies
@@ -467,7 +466,7 @@ You are free to use, modify, and distribute this project with attribution. For p
 
 <br/>
 
-### Krish
+### Krish Modh
 
 **Full Stack Developer · Application Security Engineer**
 
@@ -475,23 +474,13 @@ You are free to use, modify, and distribute this project with attribution. For p
 
 <br/>
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/your-username)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-linkedin)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/KrishModh)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/krish-modh-b38447300)
 [![Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-FF5722?style=for-the-badge)](https://your-portfolio-domain.com)
 
 <br/>
 
 ---
-
-<br/>
-
-```
-╔════════════════════════════════════════════╗
-║    Built, secured, and shipped by Krish    ║
-╚════════════════════════════════════════════╝
-```
-
-<br/>
 
 ⭐ **If this project helped you, drop a star — it means a lot!** ⭐
 
