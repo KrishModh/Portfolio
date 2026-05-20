@@ -4,7 +4,7 @@ const { env } = require("./env");
 async function connectDatabase() {
   mongoose.set("strictQuery", true);
   await mongoose.connect(env.MONGODB_URI, {
-    tlsAllowInvalidCertificates: true,  // ← ye add karo
+    tlsAllowInvalidCertificates: true,
   });
   console.log("MongoDB connected");
 }
