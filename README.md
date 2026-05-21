@@ -33,7 +33,7 @@
 
 <br/>
 
-[🌐 Live Portfolio](https://your-portfolio-domain.com) &nbsp;·&nbsp;
+[🌐 Live Portfolio](https://www.krishmodh.site) &nbsp;·&nbsp;
 [📖 API Docs](#-api-reference) &nbsp;·&nbsp;
 [🚀 Deploy Now](#-deployment)
 
@@ -51,7 +51,6 @@ It ships with a polished **public-facing portfolio**, a **private admin control 
 
 Built by a **Full Stack Developer & Application Security Engineer** who takes both UX polish and backend hardening seriously.
 
-> *"Your portfolio is your product. Ship it like one."*
 
 ---
 
@@ -189,7 +188,6 @@ Krish Portfolio OS/
 
 ## 🖼️ Screenshots
 
-> _Screenshots below are placeholders — replace with your deployed app captures._
 
 | Public Portfolio | Admin Dashboard |
 |---|---|
@@ -272,7 +270,6 @@ CONTACT_RATE_LIMIT_MAX=5
 VITE_API_BASE_URL=http://localhost:5000/api
 ```
 
-> ⚠️ **Never commit real `.env` values.** Use your hosting provider's secret management for production credentials.
 
 ---
 
@@ -476,7 +473,7 @@ You are free to use, modify, and distribute this project with attribution. For p
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/KrishModh)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/krish-modh-b38447300)
-[![Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-FF5722?style=for-the-badge)](https://your-portfolio-domain.com)
+[![Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-FF5722?style=for-the-badge)](https://www.krishmodh.site)
 
 <br/>
 
